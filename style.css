@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh; /* Ensures it takes at least full viewport height */
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: auto;
+} 
+
+.sidebar-left, .sidebar-right {
+    width: 800px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-content {
+    background-color: #fffdf2;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+}
+    
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    font-family: "DM Serif Display", serif;
+}
+
+h2, p {
+    text-align: center;
+}
+
+hr {
+    width: 50%;
+    margin: auto;
+}
+
+.image-container {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full-width-image-a {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    white-space: nowrap;
+}
+
+.overlay-text h1 {
+    font-size: 33px;
+    margin: 15px;
+    letter-spacing: 2px;
+}
+
+.graphic-text p {
+    font-family: "Windsong", cursive;
+    color: green;
+    text-align: center;
+    margin-top: -25px;
+}
+
+nav ul, .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+
+.menu ul {
+    background-color: #333;
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: underline;
+    text-decoration-color: green;
+    background-color: #333;
+    color: white;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #9e9e9e;
+    min-width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.submenu li {
+    display: block;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.submenu li a:hover {
+    background-color: rgba(158, 158, 158, 0.33);
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+    
+.flag-image {
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+}
